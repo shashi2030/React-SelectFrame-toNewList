@@ -1,0 +1,58 @@
+body, html {
+  
+  }
+  .resizable {
+    background: rgba(0,0,0,.1);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
+  .resizable .resizers{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #4286f4;
+    box-sizing: border-box;
+  }
+  .resizable .resizers .resizer{
+    width: 5px;
+    height:98px;
+    background: red;
+    border: 1px solid #4286f4;
+    position: absolute;
+    top:0;
+  }
+  .resizable .resizers .resizer.left {
+    left: -5px;
+    bottom: -5px;
+    cursor: col-resize;
+  }
+  .resizable .resizers .resizer.right {
+    right: -5px;
+    bottom: -5px;
+    cursor: col-resize;
+  }
+  #gallery{
+    width:1000px;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+  }
+  .selected{
+    opacity: 0.1;
+  }
+  .output{
+    position: absolute;
+    top:300px;
+    left:100px;
+    border:solid 2px gray;
+  }
+  .inner-container{
+    position: relative;
+  }
+  .header{
+    position:absolute;
+    top:230px;
+    left:100px;
+  }
